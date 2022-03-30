@@ -21,6 +21,7 @@ require_once('functions.php');
 <a href="index.php?page=7">Работа с cookie</a><br>
 <a href="index.php?page=8">Работа с сессиями</a><br>
 <a href="index.php?page=9">Авторизация пользователей</a><br>
+<a href="index.php?page=10">Функции для работы с каталогами</a><br>
 
 <br>
 <hr>
@@ -32,6 +33,10 @@ include __DIR__ . '/template/template.php';
 if(isset($_GET['page'])) {
     require_once 'scripts/' . $_GET['page'] . '.php';
 }
+
+
+
+
 
 ?>
 
