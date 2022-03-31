@@ -35,7 +35,18 @@ if(isset($_GET['page'])) {
 }
 
 
+class Point {
+    public $x;
+    public $y;
+}
 
+$point = new Point();
+
+$point->x = 5;
+$point->y = 3;
+
+echo $point->x . '<br>';
+echo $point->y . '<br>';
 
 
 ?>
