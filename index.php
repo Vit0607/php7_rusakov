@@ -36,17 +36,41 @@ if(isset($_GET['page'])) {
 
 
 class Point {
-    public $x;
-    public $y;
+    private $x;
+    private $y;
+
+    public function __construct ($x, $y) {
+        $this->x = $x;
+        $this->y = $y;
+    }
+
+    public function getX() {
+        return $this->x;
+    }
+
+    public function getY() {
+        return $this->y;
+    }
+
+    public function setX($x) {
+        $this->x = $x;
+    }
+
+    public function setY($y) {
+        $this->y = $y;
+    }
 }
 
-$point = new Point();
+$point = new Point(6, 4);
 
-$point->x = 5;
-$point->y = 3;
+$point->setX(45);
+$point->setY(60);
 
-echo $point->x . '<br>';
-echo $point->y . '<br>';
+//echo $point->x . '<br>';
+//echo $point->y . '<br>';
+
+echo $point->getX() . '<br>';
+echo $point->getY() . '<br>';
 
 
 ?>
