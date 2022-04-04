@@ -22,6 +22,7 @@ require_once('functions.php');
 <a href="index.php?page=8">Работа с сессиями</a><br>
 <a href="index.php?page=9">Авторизация пользователей</a><br>
 <a href="index.php?page=10">Функции для работы с каталогами</a><br>
+<a href="index.php?page=11">Изучение Laravel</a><br>
 
 <br>
 <hr>
@@ -35,42 +36,6 @@ if(isset($_GET['page'])) {
 }
 
 
-class Point {
-    private $x;
-    private $y;
-
-    public function __construct ($x, $y) {
-        $this->x = $x;
-        $this->y = $y;
-    }
-
-    public function getX() {
-        return $this->x;
-    }
-
-    public function getY() {
-        return $this->y;
-    }
-
-    public function setX($x) {
-        $this->x = $x;
-    }
-
-    public function setY($y) {
-        $this->y = $y;
-    }
-}
-
-$point = new Point(6, 4);
-
-$point->setX(45);
-$point->setY(60);
-
-//echo $point->x . '<br>';
-//echo $point->y . '<br>';
-
-echo $point->getX() . '<br>';
-echo $point->getY() . '<br>';
 
 
 ?>
